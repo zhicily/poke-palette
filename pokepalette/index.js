@@ -46,7 +46,7 @@ function python_calc(img_link) {
     return new Promise((resolve, reject) => {
         const { spawn } = require('child_process');
         
-        const palette = spawn('python3', ['palette_colours.py', img_link]);
+        const palette = spawn('python3', ['pokepalette_backend/palette_colours.py', img_link]);
         
         palette.stdout.on('data', function(data) {
             hex_list = String(data);        
@@ -61,7 +61,7 @@ function python_match(name, names) {
     return new Promise((resolve, reject) => {
         const { spawn } = require('child_process');
         
-        const matches = spawn('python3', ['match_names.py', name, names]);
+        const matches = spawn('python3', ['pokepalette_backend/match_names.py', name, names]);
         
         matches.stdout.on('data', function(data) {
             hex_list = String(data);        

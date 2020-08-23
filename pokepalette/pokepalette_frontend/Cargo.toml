@@ -1,5 +1,5 @@
 [package]
-name = "pokepalette"
+name = "pokepalette-frontend"
 version = "0.1.0"
 authors = ["Cynthia Zhao <zhicily@gmail.com>"]
 edition = "2018"
