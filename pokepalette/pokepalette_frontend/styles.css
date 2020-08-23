@@ -1,0 +1,146 @@
+* {
+    font-size: 100%;
+    font-family: Courier;
+}
+
+h1 {
+    display: block;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    color: #22525D;
+}
+
+h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    color: #22525D;
+}
+
+h3 {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0.7em;
+    margin-bottom: 0.4em;
+    color: #22525D;
+}
+
+.hueContainer {
+    width: 800px;
+    height: 115px;
+    align-content: center;
+    background-color: white;
+}
+
+.overlay {
+    position: absolute;
+    width: 150px;
+    height: 110px;
+    opacity: 0;
+    background-color: white;
+}
+
+.hue {
+    float: left;
+    width: 150px;
+    height: 110px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #74BCCB;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hue:hover .overlay {
+    opacity: 0.5;
+}
+  
+.hueText {
+    color: black;
+    width: 150px;
+    height: 110px;
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    line-height: 115px;
+}
+
+/* REFERENCE: https://www.mockplus.com/blog/post/search-bar-design */
+  
+.search {
+    width: 800px;
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid #74BCCB;
+    border-right: none;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #6097A3;
+}
+  
+.searchButton {
+    width: 100px;
+    height: 36px;
+    border: 1px solid #74BCCB;
+    background-color: #74BCCB;
+    text-align: center;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.helpContainer {
+    width: 792px;
+    height: 150px;
+    align-content: center;
+    background-color: white;
+    margin-top: 2.5em;
+}
+
+.infoBox {
+    width: 380px;
+    height: 145px;
+    float: left;
+    align-content: center;
+    border: 3px solid #74BCCB;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.suggestionsBox {
+    width: 380px;
+    height: 145px;
+    float: right;
+    align-content: center;
+    border: 3px solid #74BCCB;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.helpText {
+    color: #22525D;
+    width: 350px;
+    height: 140px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    text-align: center;
+    line-height: 22px;
+}
