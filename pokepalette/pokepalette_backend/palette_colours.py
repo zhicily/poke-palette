@@ -215,6 +215,13 @@ def listToString(lst):
 
     return hex_colours_str
 
+
+def deleteImg():
+    try: 
+        os.remove(FILE_NAME)
+    except:
+        return
+
 # ******************************************************************************************
 # ===================================== PRINT OUTPUTS ======================================
 # ******************************************************************************************
@@ -242,3 +249,5 @@ else:
     result = listToString(hex_colours)
 
     print(result)
+
+    deleteImg()
